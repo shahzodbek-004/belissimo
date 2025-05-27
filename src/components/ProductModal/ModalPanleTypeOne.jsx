@@ -6,7 +6,7 @@ import {
   ingredientsList,
   sizeOptions,
 } from "../../constants/data";
-import PlusIcon from "./../../assets/icons/PlusIcon";
+import PlusIcon from "../../assets/icons/PlusIcon";
 import { CartContext } from "../../context/CartContext";
 
 function ModalPanelTypeOne({ product, handleProductModalClose }) {
@@ -44,7 +44,7 @@ function ModalPanelTypeOne({ product, handleProductModalClose }) {
       selectedIngredients
     }
     addToCart(newProduct);
-    handleProductModalClose(); 
+    handleProductModalClose()
   };
 
   return (

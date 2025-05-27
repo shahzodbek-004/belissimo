@@ -3,7 +3,7 @@ import CartProduct from "./CartProduct";
 import { CartContext } from "../../../context/CartContext";
 
 function CartContent() {
-  const { cart , getTotalPrice } = useContext(CartContext);
+  const { cart,getTotalPrice } = useContext(CartContext);
 
   return (
     <div className="cart-wrapper">
@@ -23,7 +23,7 @@ function CartContent() {
             </div>
             <div className="cart-summary__row">
               <h4>Umumiy narx</h4>
-              <h4>{getTotalPrice} so'm</h4>
+              <h4>{getTotalPrice()}so'm</h4>
             </div>
           </div>
           <button className="cart-button">Keyingisi</button>
@@ -34,3 +34,4 @@ function CartContent() {
 }
 
 export default CartContent;
+
